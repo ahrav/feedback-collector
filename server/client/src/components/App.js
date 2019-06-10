@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 import { fetchUser } from '../actions/index';
 
 import Header from './Header';
+import Landing from './Landing';
 
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
-const Landing = () => <h2>Landing</h2>;
 
 const App = ({ fetchUser }) => {
   useEffect(() => {
