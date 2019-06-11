@@ -9,8 +9,8 @@ module.exports = ({ body }) => {
       <p>Please answer the following question:</p>
       <p>${body}</p>
       <div>
-        <a href="${keys.redirectDomain}">Like</a>
-        <a href="${keys.redirectDomain}">Dislike</a>
+        <a href="${keys.redirectDomain}/api/surveys/thanks">Like</a>
+        <a href="${keys.redirectDomain}/api/surveys/thanks">Dislike</a>
       </div>
     </div>
   </body>
