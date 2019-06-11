@@ -39,7 +39,9 @@ const Header = ({ auth }) => {
         <Link to={auth ? '/surveys' : '/'} className='left brand-logo'>
           Feedback Collector
         </Link>
-        <ul className='right'>{renderContent()}</ul>
+        <ul id='nav-mobile' className='right'>
+          {renderContent()}
+        </ul>
       </div>
     </nav>
   );
