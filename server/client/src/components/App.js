@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -15,16 +15,14 @@ const App = ({ fetchUser }) => {
   }, [fetchUser]);
 
   return (
-    <div className='container'>
-      <Router>
-        <Fragment>
-          <Header />
-          <Route exact path='/' component={Landing} />
-          <Route exact path='/surveys' component={Dashboard} />
-          <Route path='/surveys/new' component={SurveyNew} />
-        </Fragment>
-      </Router>
-    </div>
+    <Router>
+      <div className='container'>
+        <Header />
+        <Route exact path='/' component={Landing} />
+        <Route exact path='/surveys' component={Dashboard} />
+        <Route path='/surveys/new' component={SurveyNew} />
+      </div>
+    </Router>
   );
 };
 
