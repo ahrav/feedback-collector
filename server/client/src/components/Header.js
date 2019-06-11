@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import Payments from './Payments';
 
-const Header = auth => {
+const Header = ({ auth }) => {
   const renderContent = () => {
     switch (auth) {
       case null:
@@ -21,6 +21,9 @@ const Header = auth => {
           <Fragment>
             <li>
               <Payments />
+            </li>
+            <li style={{ margin: '0 10px' }}>
+              Credits: {auth.credits === 0 ? 0 : auth.credits}
             </li>
             <li>
               <a href='/api/logout'>Logout</a>
