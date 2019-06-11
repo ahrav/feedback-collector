@@ -1,8 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Header = ({ auth }) => {
+const Header = auth => {
   const renderContent = () => {
     switch (auth) {
       case null:
@@ -32,6 +33,10 @@ const Header = ({ auth }) => {
       </div>
     </nav>
   );
+};
+
+Header.propTypes = {
+  auth: PropTypes.object
 };
 
 const mapStateToProps = state => ({
