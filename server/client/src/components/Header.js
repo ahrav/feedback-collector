@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import Payments from './Payments';
 
@@ -45,10 +44,6 @@ const Header = ({ auth }) => {
       </div>
     </nav>
   );
-};
-
-Header.propTypes = {
-  auth: PropTypes.object
 };
 
 const mapStateToProps = state => ({
