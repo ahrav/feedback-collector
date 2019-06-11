@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+
+import Payments from './Payments';
 
 const Header = auth => {
   const renderContent = () => {
@@ -16,9 +18,14 @@ const Header = auth => {
         );
       default:
         return (
-          <li>
-            <a href='/api/logout'>Logout</a>
-          </li>
+          <Fragment>
+            <li>
+              <Payments />
+            </li>
+            <li>
+              <a href='/api/logout'>Logout</a>
+            </li>
+          </Fragment>
         );
     }
   };
