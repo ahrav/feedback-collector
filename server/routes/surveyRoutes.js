@@ -26,7 +26,17 @@ module.exports = app => {
       });
 
       // Send email
-      const mailer = new Mailer(survey, surveyTemplate(survey));
+      try {
+        const mailer = new Mailer(survey, surveyTemplate(survey));
+        await mailer.send();
+        await survey.save();
+        req.user.credits -= 1;
+        const user = await req.user.save();
+        res.send(user);
+      } catch (err) {
+        console.error(err);
+        res.status(422).send(err);
+      }
     }
   );
 };
