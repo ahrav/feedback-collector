@@ -37,4 +37,16 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT);
+const ngrok = process.env.ENABLE_TUNNEL ? require('ngrok') : false;
+app.listen(PORT, () => {
+  if (ngrok) {
+    ngrok.connect(PORT, (err, url) => {
+      if (err) {
+        return console.log(err);
+      }
+      console.log(`Server running on ${url}`);
+    });
+  } else {
+    console.log(`Server on port ${PORT}`);
+  }
+});
