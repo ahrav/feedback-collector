@@ -1,3 +1,6 @@
+const _ = require('lodash');
+const Path = require('path-parser').default;
+const { URL } = require('url');
 const mongoose = require('mongoose');
 const isAuthenticated = require('../middlewares/isAuthenticated');
 const requireCredits = require('../middlewares/requireCredits');
@@ -44,8 +47,34 @@ module.exports = app => {
     }
   );
 
-  app.post('/api/surveys/webhooks', (req, res) => {
-    console.log(req.body);
+  app.post('/api/surveys/webhooks', async (req, res) => {
+    const p = new Path('/api/surveys/:surveyId/:choice');
+    const events = _.chain(req.body)
+      .map(({ email, url }) => {
+        const match = p.test(new URL(url).pathname);
+        if (match) {
+          return { email, surveyId: match.surveyId, choice: match.choice };
+        }
+      })
+      .compact()
+      .uniqBy('email', 'surveyId')
+      .value();
+
+    const { email, choice } = events;
+
+    await Survey.updateOne(
+      {
+        id: events.surveyId,
+        recipients: {
+          $elemMatch: { email, responded: false }
+        }
+      },
+      {
+        $inc: { [choice]: 1 },
+        $set: { 'recipients.$.responded': true }
+      }
+    );
+
     res.send({});
   });
 };
