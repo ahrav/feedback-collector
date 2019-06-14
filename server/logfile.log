@@ -1,0 +1,68 @@
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"level":"error","message":"passport.initialize() middleware not in usepassport.initialize() middleware not in use","stack":"Error: passport.initialize() middleware not in use\n    at IncomingMessage.req.login.req.logIn (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/http/request.js:46:34)\n    at Strategy.strategy.success (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/middleware/authenticate.js:248:13)\n    at verified (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:186:20)\n    at Strategy._verify (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/services/passport.js:30:18)\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"level":"error","message":"passport.initialize() middleware not in usepassport.initialize() middleware not in use","stack":"Error: passport.initialize() middleware not in use\n    at IncomingMessage.req.login.req.logIn (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/http/request.js:46:34)\n    at Strategy.strategy.success (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/middleware/authenticate.js:248:13)\n    at verified (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:186:20)\n    at Strategy._verify (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/services/passport.js:30:18)\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"name":"TokenError","message":"Bad RequestBad Request","code":"invalid_grant","status":500,"level":"error","stack":"TokenError: Bad Request\n    at Strategy.OAuth2Strategy.parseErrorResponse (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:358:12)\n    at Strategy.OAuth2Strategy._createOAuthError (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:405:16)\n    at /Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:175:45\n    at /Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:191:18\n    at passBackControl (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:132:9)\n    at IncomingMessage.<anonymous> (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:157:7)\n    at IncomingMessage.emit (events.js:201:15)\n    at endReadableNT (_stream_readable.js:1130:12)\n    at processTicksAndRejections (internal/process/task_queues.js:84:9)"}
+{"level":"error","message":"passport.initialize() middleware not in usepassport.initialize() middleware not in use","stack":"Error: passport.initialize() middleware not in use\n    at IncomingMessage.req.login.req.logIn (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/http/request.js:46:34)\n    at Strategy.strategy.success (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/middleware/authenticate.js:248:13)\n    at verified (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:186:20)\n    at Strategy._verify (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/services/passport.js:30:18)\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"name":"TokenError","message":"Bad RequestBad Request","code":"invalid_grant","status":500,"level":"error","stack":"TokenError: Bad Request\n    at Strategy.OAuth2Strategy.parseErrorResponse (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:358:12)\n    at Strategy.OAuth2Strategy._createOAuthError (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:405:16)\n    at /Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:175:45\n    at /Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:191:18\n    at passBackControl (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:132:9)\n    at IncomingMessage.<anonymous> (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/oauth/lib/oauth2.js:157:7)\n    at IncomingMessage.emit (events.js:201:15)\n    at endReadableNT (_stream_readable.js:1130:12)\n    at processTicksAndRejections (internal/process/task_queues.js:84:9)"}
+{"level":"error","message":"passport.initialize() middleware not in usepassport.initialize() middleware not in use","stack":"Error: passport.initialize() middleware not in use\n    at IncomingMessage.req.login.req.logIn (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/http/request.js:46:34)\n    at Strategy.strategy.success (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport/lib/middleware/authenticate.js:248:13)\n    at verified (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/node_modules/passport-oauth2/lib/strategy.js:186:20)\n    at Strategy._verify (/Users/ahrav/Desktop/Javascript/MERN/feedbackCollection/server/services/passport.js:30:18)\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
+{"message":"Listening on port 5000","level":"info"}
+{"message":"MongoDB connected","level":"info"}
